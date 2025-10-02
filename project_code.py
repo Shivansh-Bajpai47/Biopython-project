@@ -13,9 +13,9 @@ except ImportError:
     print("⚠ matplotlib not installed. Skipping visualization step.")
 
 # Setup
-Entrez.email = "your.email@example.com"   # Replace with valid email
-nuc_accession = "NM_001127511"            # Updated accession number
-pdb_id = "1AY7"                           # Updated PDB ID
+Entrez.email = "shivanshbajpai47@gmail.com"   # Replace with valid email
+nuc_accession = "NM_001302456"            # Updated accession number
+pdb_id = "1MBA"                           # Updated PDB ID
 
 # --- 1. Parse & Fetch Nucleotide Sequence ---
 print("\n--- Fetching Nucleotide Sequence ---")
@@ -97,7 +97,3 @@ print("Residues in first chain:", len([res for res in structure[0][list(structur
 print("\n--- Annotations (first 5 features) ---")
 for i, feature in enumerate(record.features[:5]):
     print(i, feature.type, feature.location)
-
-
-
-
